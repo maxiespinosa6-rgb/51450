@@ -1,4 +1,4 @@
-// Generated from d:/51450/Flight/Flight.g4 by ANTLR 4.13.1
+// Generated from d:/51450/Flight.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -117,6 +117,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_vuelo; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterVuelo(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitVuelo(this);
+		}
 	}
 
 	public final VueloContext vuelo() throws RecognitionException {
@@ -203,6 +211,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_codigo; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterCodigo(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitCodigo(this);
+		}
 	}
 
 	public final CodigoContext codigo() throws RecognitionException {
@@ -248,6 +264,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_fecha; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterFecha(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitFecha(this);
+		}
 	}
 
 	public final FechaContext fecha() throws RecognitionException {
@@ -298,6 +322,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_estado; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterEstado(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitEstado(this);
+		}
 	}
 
 	public final EstadoContext estado() throws RecognitionException {
@@ -340,6 +372,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_aeropuertosalida; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterAeropuertosalida(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitAeropuertosalida(this);
+		}
 	}
 
 	public final AeropuertosalidaContext aeropuertosalida() throws RecognitionException {
@@ -377,6 +417,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_aeropuertoorigen; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterAeropuertoorigen(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitAeropuertoorigen(this);
+		}
 	}
 
 	public final AeropuertoorigenContext aeropuertoorigen() throws RecognitionException {
@@ -415,6 +463,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_asiento; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterAsiento(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitAsiento(this);
+		}
 	}
 
 	public final AsientoContext asiento() throws RecognitionException {
@@ -456,6 +512,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_operador; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterOperador(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitOperador(this);
+		}
 	}
 
 	public final OperadorContext operador() throws RecognitionException {
@@ -513,6 +577,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_puerta; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterPuerta(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitPuerta(this);
+		}
 	}
 
 	public final PuertaContext puerta() throws RecognitionException {
@@ -559,6 +631,14 @@ public class FlightParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_terminal; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).enterTerminal(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FlightListener ) ((FlightListener)listener).exitTerminal(this);
+		}
 	}
 
 	public final TerminalContext terminal() throws RecognitionException {
